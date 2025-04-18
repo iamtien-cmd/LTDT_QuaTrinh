@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Mã bài hát -->
+    <TextView
+        android:id="@+id/tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:textColor="#19b395"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="60650" />
+
+    <!-- Tiêu đề bài hát -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#2c3e50"
+        android:layout_marginStart="30dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@id/tv_code"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="HÃY TIN ANH LẦN NỮA" />
+
+    <!-- Lời bài hát -->
+    <TextView
+        android:id="@+id/tv_lyric"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#34495e"
+        android:layout_marginStart="30dp"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@id/tv_code"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Dẫu cho ta đã sai khi ở bên nhau" />
+
+    <!-- Tên ca sĩ -->
+    <TextView
+        android:id="@+id/tv_artist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#7f8c8d"
+        android:layout_marginStart="30dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/tv_code"
+        app:layout_constraintTop_toBottomOf="@id/tv_lyric"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Thiên Dũng" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
